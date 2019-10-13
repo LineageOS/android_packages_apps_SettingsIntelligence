@@ -65,16 +65,20 @@ public class SiteMapManager {
         breadcrumbs.add(screenTitle);
         String currentClass = clazz;
         String currentTitle = screenTitle;
+        String parentTitle = null;
         // Look up current page's parent, if found add it to breadcrumb string list, and repeat.
         while (true) {
             final SiteMapPair pair = lookUpParent(currentClass, currentTitle);
-            if (pair == null) {
+            if (pair != null) {
+                parentTitle = pair.getParentTitle();
+            }
+            if (pair == null || parentTitle == null) {
                 if (DEBUG_TIMING) {
                     Log.d(TAG, "BreadCrumb timing: " + (System.currentTimeMillis() - startTime));
                 }
                 return breadcrumbs;
             }
-            breadcrumbs.add(0, pair.getParentTitle());
+            breadcrumbs.add(0, parentTitle);
             currentClass = pair.getParentClass();
             currentTitle = pair.getParentTitle();
         }
