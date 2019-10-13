@@ -85,7 +85,8 @@ public abstract class SearchViewHolder extends RecyclerView.ViewHolder {
     }
 
     private void bindBreadcrumbView(SearchResult result) {
-        if (result.breadcrumbs == null || result.breadcrumbs.isEmpty()) {
+        if (result.breadcrumbs == null || result.breadcrumbs.isEmpty() ||
+                    result.breadcrumbs.get(0) == null) {
             breadcrumbView.setVisibility(View.GONE);
             return;
         }
