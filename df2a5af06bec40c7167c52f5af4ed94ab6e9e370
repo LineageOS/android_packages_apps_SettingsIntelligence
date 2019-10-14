@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "15a23b1e_d209056c",
+        "filename": "src/com/android/settings/intelligence/search/SearchViewHolder.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2019-10-14T21:22:22Z",
+      "side": 1,
+      "message": "Too many spaces, see line #67 to see how many you should use. You might as well move || to next line to match #67.t",
+      "range": {
+        "startLine": 89,
+        "startChar": 8,
+        "endLine": 89,
+        "endChar": 20
+      },
+      "revId": "df2a5af06bec40c7167c52f5af4ed94ab6e9e370",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
