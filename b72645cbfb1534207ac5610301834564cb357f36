@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "997a5549_91371643",
+        "filename": "src/com/android/settings/intelligence/search/sitemap/SiteMapManager.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2019-10-14T21:21:20Z",
+      "side": 1,
+      "message": "AOSP code style requires {} ^^",
+      "range": {
+        "startLine": 72,
+        "startChar": 12,
+        "endLine": 72,
+        "endChar": 29
+      },
+      "revId": "b72645cbfb1534207ac5610301834564cb357f36",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
