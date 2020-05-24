@@ -239,6 +239,7 @@ public class SearchFragment extends Fragment implements SearchView.OnQueryTextLi
         if (isEmptyQuery) {
             final LoaderManager loaderManager = getLoaderManager();
             loaderManager.destroyLoader(SearchLoaderId.SEARCH_RESULT);
+            mNoResultsView.setVisibility(View.VISIBLE);
             mShowingSavedQuery = true;
             mSavedQueryController.loadSavedQueries();
             mSearchFeatureProvider.hideFeedbackButton(getView());

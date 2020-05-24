@@ -95,6 +95,7 @@ public class SearchResultsAdapter extends RecyclerView.Adapter<SearchViewHolder>
         clearResults();
         mSearchResults.addAll(data);
         notifyDataSetChanged();
+        mFragment.onSearchResultsDisplayed(mSearchResults.size());
     }
 
     public void clearResults() {
