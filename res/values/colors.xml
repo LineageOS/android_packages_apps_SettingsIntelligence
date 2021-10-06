@@ -15,6 +15,16 @@
   limitations under the License.
   -->
 
+<<<<<<< HEAD   (ebac17e9c8e19a41e9d0600671963372a34e85a2 Merge tag 'android-16.0.0_r4' into staging/lineage-23.2_merg)
 <resources>
     <color name="search_bar_background">?android:attr/colorBackground</color>
+=======
+<resources
+    xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
+
+    <color name="launcher_background_color">#ff008577</color>
+
+    <color name="search_bar_background">?androidprv:attr/materialColorSurfaceBright</color>
+
+>>>>>>> CHANGE (2d1f70c640b0abfe652ff4763d80a958b2baca49 Style search bar to match new Settings UI)
 </resources>
