@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "058760d9_9ac6b422",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13028
+      },
+      "writtenOn": "2022-01-23T22:53:32Z",
+      "side": 1,
+      "message": "Thanks, didn\u0027t know of that one. Still works.\nReasoning is given in commit message and code comment.\nSearching for \"gest\" like in gestures currently brings up a few \"Gestural navigation bar\" packages which just recently lead someone to assume it must work. Fonts, icon packs, accent colors are also hidden that way (only the \"app\" version of it, not the actual setting for them)\nWhile I agree that this shouldn\u0027t be the reason, hiding overlays makes sense since there are no settings for those to do, no data to clear etc. They are just increasing the search results unnecessarily.",
+      "revId": "da232f4c56e3d5268d96722c8cd1cb18a1cc40b2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
