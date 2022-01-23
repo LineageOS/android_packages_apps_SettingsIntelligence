@@ -32,6 +32,7 @@ import com.android.settings.intelligence.search.indexing.DatabaseIndexingUtils;
 import com.android.settings.intelligence.search.sitemap.SiteMapManager;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -82,6 +83,20 @@ public class InstalledAppResultTask extends SearchQueryTask.QueryWorker {
             final CharSequence label = info.loadLabel(mPackageManager);
             final int wordDiff = SearchQueryUtils.getWordDifference(label.toString(), mQuery);
             if (wordDiff == SearchQueryUtils.NAME_NO_MATCH) {
+                continue;
+            }
+
+            // There are several packages that are of no use when shown at all, skip them
+            boolean skip = false;
+            List<String> excludeList = Arrays.asList("com.android.internal", "com.android.theme",
+                "org.lineageos.overlay");
+            for (String exclude : excludeList) {
+                if (info.packageName.contains(exclude)) {
+                    skip = true;
+                    break;
+                }
+            }
+            if (skip) {
                 continue;
             }
 
