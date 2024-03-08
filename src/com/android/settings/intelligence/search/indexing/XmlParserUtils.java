@@ -24,7 +24,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.util.TypedValue;
 
-import com.android.settings.intelligence.R;
+import androidx.preference.R;
 
 /**
  * Utility class to parse elements of XML preferences
