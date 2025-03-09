@@ -23,6 +23,6 @@
     <string name="physical_keyboard_title" msgid="3955072245281785000">"भौतिक किबोर्ड"</string>
     <string name="add_virtual_keyboard" msgid="542703692821933851">"किबोर्डहरूको व्यवस्थापन गर्नुहोस्"</string>
     <string name="app_name_settings_intelligence" msgid="8701735500346011661">"सेटिङसम्बन्धी सुझावहरू"</string>
-    <string name="search_clear_history" msgid="6232116698940067519">"इतिहास मेटाउनुहोस्"</string>
+    <string name="search_clear_history" msgid="6232116698940067519">"हिस्ट्री मेटाउनुहोस्"</string>
     <string name="search_no_results" msgid="6855095945475439835">"कुनै पनि परिणाम भेटिएन"</string>
 </resources>
