@@ -20,6 +20,6 @@
 
     <color name="launcher_background_color">#ff008577</color>
 
-    <color name="search_bar_background">?androidprv:attr/materialColorSurfaceBright</color>
+    <color name="search_bar_background">@androidprv:color/materialColorSurfaceBright</color>
 
 </resources>
