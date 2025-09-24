@@ -19,8 +19,6 @@ package com.android.settings.intelligence.search.savedqueries;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import androidx.loader.app.LoaderManager;
 import androidx.loader.content.Loader;
 
@@ -33,8 +31,7 @@ import com.android.settings.intelligence.search.SearchResultsAdapter;
 
 import java.util.List;
 
-public class SavedQueryController implements LoaderManager.LoaderCallbacks,
-        MenuItem.OnMenuItemClickListener {
+public class SavedQueryController implements LoaderManager.LoaderCallbacks {
 
     // TODO: make a generic background task manager to handle one-off tasks like this one.
     private static final String ARG_QUERY = "remove_query";
@@ -87,21 +84,6 @@ public class SavedQueryController implements LoaderManager.LoaderCallbacks,
 
     @Override
     public void onLoaderReset(Loader loader) {
-    }
-
-    @Override
-    public boolean onMenuItemClick(MenuItem item) {
-        if (item.getItemId() != MENU_SEARCH_HISTORY) {
-            return false;
-        }
-        removeQueries();
-        return true;
-    }
-
-    public void buildMenuItem(Menu menu) {
-        final MenuItem item =
-                menu.add(Menu.NONE, MENU_SEARCH_HISTORY, Menu.NONE, R.string.search_clear_history);
-        item.setOnMenuItemClickListener(this);
     }
 
     public void saveQuery(String query) {

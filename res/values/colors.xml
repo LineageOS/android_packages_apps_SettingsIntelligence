@@ -16,5 +16,4 @@
   -->
 
 <resources>
-    <color name="search_bar_background">?android:attr/colorBackground</color>
 </resources>

@@ -24,33 +24,54 @@
     <FrameLayout
         android:id="@+id/search_bar_container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:elevation="4dp">
-        <androidx.cardview.widget.CardView
-            android:id="@+id/search_bar"
+        android:layout_height="wrap_content">
+        <Toolbar
+            android:id="@+id/search_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/search_bar_margin"
-            app:cardCornerRadius="2dp"
-            app:cardElevation="2dp">
-            <Toolbar
-                android:id="@+id/search_toolbar"
+            android:layout_height="@dimen/search_bar_height"
+            android:layout_marginTop="@dimen/search_bar_margin"
+            android:layout_marginBottom="@dimen/search_bar_margin"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentInsetStart="0dp"
+            android:contentInsetStartWithNavigation="0dp"
+            android:theme="?android:attr/actionBarTheme">
+            <SearchView
+                android:id="@+id/search_view"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/search_bar_height"
-                android:background="?android:attr/selectableItemBackground"
-                android:contentInsetStart="0dp"
-                android:contentInsetStartWithNavigation="0dp"
-                android:theme="?android:attr/actionBarTheme">
-                <SearchView
-                    android:id="@+id/search_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:iconifiedByDefault="false"
-                    android:imeOptions="actionSearch|flagNoExtractUi"
-                    android:searchIcon="@null"/>
-            </Toolbar>
-        </androidx.cardview.widget.CardView>
+                android:layout_height="match_parent"
+                android:iconifiedByDefault="false"
+                android:imeOptions="actionSearch|flagNoExtractUi"
+                android:searchIcon="@null"/>
+        </Toolbar>
     </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:text="Recent search results"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+    
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/layout_results"

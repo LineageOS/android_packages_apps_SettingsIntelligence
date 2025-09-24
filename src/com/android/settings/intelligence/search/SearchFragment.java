@@ -23,7 +23,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.VisibleForTesting;
-import androidx.cardview.widget.CardView;
 import androidx.loader.content.Loader;
 import androidx.loader.app.LoaderManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -133,12 +132,6 @@ public class SearchFragment extends Fragment implements SearchView.OnQueryTextLi
     }
 
     @Override
-    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        super.onCreateOptionsMenu(menu, inflater);
-        mSavedQueryController.buildMenuItem(menu);
-    }
-
-    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         final Activity activity = getActivity();
@@ -149,9 +142,6 @@ public class SearchFragment extends Fragment implements SearchView.OnQueryTextLi
         mResultsRecyclerView.addOnScrollListener(mScrollListener);
 
         mNoResultsView = view.findViewById(R.id.no_results_layout);
-
-        final CardView cardView = view.findViewById(R.id.search_bar);
-        cardView.setBackgroundResource(R.drawable.search_bar_selected_background);
 
         final Toolbar toolbar = view.findViewById(R.id.search_toolbar);
         activity.setActionBar(toolbar);
