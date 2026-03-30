@@ -16,6 +16,24 @@
       "message": "See comments on 23.0 change: https://review.lineageos.org/c/LineageOS/android_packages_apps_SettingsIntelligence/+/433482\n\nNeeds restyling",
       "revId": "8cf278ff1d26407c320ef8864719f5d045cc71a7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7a83d060_c1589f6e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27072
+      },
+      "writtenOn": "2026-03-30T10:53:44Z",
+      "side": 1,
+      "message": "Yeah, it\u0027s ugly and weird, even matching its style with the Settings\u0027 search bar still doesn\u0027t look good when empty. Probably better go with Google\u0027s SettingsIntelligence search panel style, no box at all.",
+      "parentUuid": "c6fe604a_ec1b5382",
+      "revId": "8cf278ff1d26407c320ef8864719f5d045cc71a7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
