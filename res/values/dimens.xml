@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   Copyright (C) 2017 The Android Open Source Project
+  Copyright (C) The LineageOS Project
 
   Licensed under the Apache License, Version 2.0 (the "License");
   you may not use this file except in compliance with the License.
@@ -23,14 +24,13 @@
     <dimen name="dashboard_padding_top">0dp</dimen>
     <dimen name="dashboard_padding_bottom">0dp</dimen>
 
-    <!-- The following two margins need to match, with the caveat that
-     the second should be negative. The second one ensures that the icons and text
-     align despite the additional padding caused by the search bar's card background. -->
-    <dimen name="search_bar_margin">8dp</dimen>
-    <dimen name="search_bar_negative_margin">-8dp</dimen>
+    <!-- Search bar -->
+    <dimen name="search_bar_container_top_padding">8dp</dimen>
+    <dimen name="search_bar_corner_radius">40dp</dimen>
+    <dimen name="search_bar_padding_start">24dp</dimen>
 
-    <dimen name="search_bar_height">48dp</dimen>
-    <dimen name="search_bar_text_size">16dp</dimen>
+    <dimen name="search_bar_height">72dp</dimen>
+    <dimen name="search_bar_text_size">20sp</dimen>
 
     <!-- Dashboard image tile size -->
     <dimen name="dashboard_tile_image_size">24dp</dimen>

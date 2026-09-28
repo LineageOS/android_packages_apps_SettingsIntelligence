@@ -24,7 +24,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.VisibleForTesting;
-import androidx.cardview.widget.CardView;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -162,11 +161,9 @@ public class SearchFragment extends Fragment implements SearchView.OnQueryTextLi
 
         mNoResultsView = view.findViewById(R.id.no_results_layout);
 
-        final CardView cardView = view.findViewById(R.id.search_bar);
-        cardView.setBackgroundResource(R.drawable.search_bar_selected_background);
-
         final Toolbar toolbar = view.findViewById(R.id.search_toolbar);
         activity.setActionBar(toolbar);
+        activity.getActionBar().setHomeAsUpIndicator(R.drawable.ic_arrow_back);
         activity.getActionBar().setDisplayHomeAsUpEnabled(true);
 
         mSearchView = toolbar.findViewById(R.id.search_view);

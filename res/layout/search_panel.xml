@@ -26,19 +26,26 @@
         android:id="@+id/search_bar_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:elevation="4dp">
-        <androidx.cardview.widget.CardView
+        android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+        android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+        android:paddingTop="@dimen/search_bar_container_top_padding">
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/search_bar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/search_bar_margin"
-            app:cardCornerRadius="2dp"
-            app:cardElevation="2dp">
+            android:theme="@style/Theme.MaterialComponents.DayNight"
+            app:cardBackgroundColor="@color/materialColorSurfaceContainerLowest"
+            app:cardCornerRadius="@dimen/search_bar_corner_radius"
+            app:cardElevation="0dp"
+            app:strokeColor="@color/materialColorOutlineVariant"
+            app:strokeWidth="1dp">
             <Toolbar
                 android:id="@+id/search_toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/search_bar_height"
-                android:background="?android:attr/selectableItemBackground"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/search_bar_height"
+                android:paddingStart="@dimen/search_bar_padding_start"
+                android:paddingEnd="@dimen/search_bar_padding_start"
                 android:contentInsetStart="0dp"
                 android:contentInsetStartWithNavigation="0dp"
                 android:theme="?android:attr/actionBarTheme">
@@ -48,9 +55,11 @@
                     android:layout_height="match_parent"
                     android:iconifiedByDefault="false"
                     android:imeOptions="actionSearch|flagNoExtractUi"
+                    android:queryBackground="@null"
+                    android:submitBackground="@null"
                     android:searchIcon="@null"/>
             </Toolbar>
-        </androidx.cardview.widget.CardView>
+        </com.google.android.material.card.MaterialCardView>
     </FrameLayout>
 
     <FrameLayout
