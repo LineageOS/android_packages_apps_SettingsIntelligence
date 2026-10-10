@@ -22,6 +22,30 @@
       },
       "revId": "b6c48af0b92e053f0028a12cbe63537eb15d1c27",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "78708463_521af2e3",
+        "filename": "src/com/android/settings/intelligence/search/indexing/PreIndexDataCollector.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 349,
+      "author": {
+        "id": 6360
+      },
+      "writtenOn": "2026-10-10T16:29:59Z",
+      "side": 1,
+      "message": "The continue only runs when both conditions are true: the key is empty and verbose logging is enabled. Verbose logging is off by default, so the condition is false and empty or null keys fall through to result.add(key). The behaviour of the method changes depending on a debug log setting, which was clearly not intended.",
+      "parentUuid": "259aca71_7973836a",
+      "range": {
+        "startLine": 345,
+        "startChar": 0,
+        "endLine": 349,
+        "endChar": 25
+      },
+      "revId": "b6c48af0b92e053f0028a12cbe63537eb15d1c27",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
