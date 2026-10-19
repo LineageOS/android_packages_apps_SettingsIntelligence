@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ef45ba0_f4910483",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2026-10-19T11:04:55Z",
+      "side": 1,
+      "message": "fixes this thing - https://imgur.com/a/bCUO24X\nsomehow only happens on my fast phone?",
+      "revId": "cd1325fdb721479d6936b3b045a13107584fd134",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
